@@ -1,0 +1,35 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+
+workspace 'Feature1'
+platform :ios , '9.0'
+inhibit_all_warnings!
+
+### spec file git-path
+##$SpecPath = 'ssh://10.10.10.10:29999/'
+###该方法实现 framework和source的切换 目前仅支持所有组件统一切换
+### @pname="#{@pname}/Source" 此方法实现源码引入
+### @pname="#{@pname}" 此方法实现framework引入
+  
+def podspecName(name="")
+  @pname=name
+  @pname="#{@pname}/Framework"
+  return @pname
+end
+
+target 'Feature1' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+  project 'Feature1_iOS/Feature1'
+  # Pods for Feature1
+  pod 'Objection', '1.6.1'
+  pod 'AFNetworking', '~> 3.0'
+  pod podspecName("Common"), :path => '../../Modularization/Common_iOS'
+
+  target 'Feature1Tests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

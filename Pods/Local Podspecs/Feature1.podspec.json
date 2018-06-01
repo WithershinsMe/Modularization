@@ -1,0 +1,40 @@
+{
+  "name": "Feature1",
+  "version": "0.0.1",
+  "summary": "A short description of Feature1.",
+  "description": "组建化测试",
+  "homepage": "http://gk/Feature1",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "gk": "gaojianfeng6909@gmail.com"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "requires_arc": true,
+  "source": {
+    "path": "."
+  },
+  "default_subspecs": "Framework",
+  "frameworks": "UIKit",
+  "subspecs": [
+    {
+      "name": "Source",
+      "source_files": "Feature1/**/*.{h,m,c,mm}",
+      "prefix_header_file": "Feature1/Feature1-Prefix.pch",
+      "resources": [
+        "Release-universal/Feature1SDKBundle.bundle"
+      ]
+    },
+    {
+      "name": "Framework",
+      "vendored_frameworks": "Release-universal/Feature1.framework",
+      "resources": [
+        "Release-universal/Feature1SDKBundle.bundle"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+workspace 'Common'
+platform :ios , '9.0'
+inhibit_all_warnings!
+
+pod 'Objection', '1.6.1'
+
+target 'Common' do
+  project 'Common_iOS/Common'
+  # Pods for Common
+  target 'CommonTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

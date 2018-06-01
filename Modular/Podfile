@@ -1,0 +1,60 @@
+
+
+workspace 'Modularization'
+platform :ios, '9.0'
+inhibit_all_warnings!
+
+### spec file git path
+### $SpecPath = 'your spec path'
+
+###所有Target共享的组建
+pod 'AFNetworking', '~> 3.0'
+pod 'Objection', '1.6.1'
+
+
+### end
+
+###该方法实现 framework和source的切换 目前仅支持所有组件统一切换
+### @pname="#{@pname}/Source" 此方法实现源码引入
+### @pname="#{@pname}" 此方法实现framework引入
+
+def podspecName(name="")
+@pname=name
+@pname="#{@pname}/Framework"
+return @pname
+end
+
+### pod podspecName("HttpClientSDK"), :git => $SpecPath + 'HttpClient_iOS', :tag => '1.1.0'
+pod podspecName("Common"), :path => '../Modularization/Common_iOS'
+pod podspecName("Feature1"), :path => '../Modularization/Feature1_iOS'
+
+target 'Modularization' do
+
+  project 'Modular/Modularization'
+
+  # Pods for Modularization
+
+  target 'ModularizationTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'ModularizationUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
+
+## feature1
+#target 'Feature1' do
+#project 'Feature1_iOS/Feature1'
+#end
+
+## Common
+#target 'Common' do
+#project 'Common_iOS/Common'
+#end
+
+#end
+
