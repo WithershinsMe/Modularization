@@ -10,6 +10,9 @@
 #import <UIKit/UIKit.h>
 @protocol Feature1SDKProtocol<NSObject>
 
-- (void)presentFeature1SDKWithSourceVC:(UIViewController *) sourceVC animationType:(ModuleAnimationType)animationType completionBlock: (void(^)(ModuleStatus status, NSString *errorCode, NSString *errorMsg)) completionBlock;
+- (void)presentFeature1SDKWithSourceVC:(UIViewController *) sourceVC
+                         animationType:(ModuleAnimationType)animationType
+                           environment: (Environment)env
+                       completionBlock: (void(^)(ModuleStatus status, NSString *errorCode, NSString *errorMsg)) completionBlock;
 
 @end

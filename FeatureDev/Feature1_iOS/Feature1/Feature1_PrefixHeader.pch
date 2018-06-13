@@ -10,6 +10,6 @@
 #define Feature1_PrefixHeader_pch
 
 #import <Common/Common.h>
-
+#import "Feature1GlobalData.h"
 
 #endif /* Feature1_PrefixHeader_pch */

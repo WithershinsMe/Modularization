@@ -23,7 +23,8 @@
 
 ####  模块内所包含的图片资源和xib,storyboard等都且只能放在bundle内，framework中不应该包含以上的所有资源
 ####  防止资源重复添加
-
+####  设置允许Allow Non-modular Includes in Framework Modules为YES
+#### 设置静态变量共享在FrameWork内部的全局字符串，静态变量的使用范围在定义她的源文件内有效
 
 
 

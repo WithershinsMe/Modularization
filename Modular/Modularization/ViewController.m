@@ -25,9 +25,10 @@
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
-    [Feature1_Obj presentFeature1SDKWithSourceVC:self animationType: Module_Push completionBlock:^(ModuleStatus status, NSString *errorCode, NSString *errorMsg) {
+    [Feature1_Obj presentFeature1SDKWithSourceVC:self animationType:Module_Push environment:Prd completionBlock:^(ModuleStatus status, NSString *errorCode, NSString *errorMsg) {
         
     }];
+   
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
