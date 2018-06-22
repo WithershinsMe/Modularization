@@ -21,6 +21,10 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		474A783A20DA64E4007B2BDD /* snftransfer_refresh_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 474A783920DA64E3007B2BDD /* snftransfer_refresh_arrow@2x.png */; };
+		474A794920DCD23C007B2BDD /* NIBNViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 474A794620DCD23C007B2BDD /* NIBNViewController.h */; };
+		474A794A20DCD23C007B2BDD /* NIBNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 474A794720DCD23C007B2BDD /* NIBNViewController.m */; };
+		474A794C20DCD246007B2BDD /* NIBNViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 474A794820DCD23C007B2BDD /* NIBNViewController.xib */; };
 		475361E220D0BD3C0088F87E /* Feature1GlobalData.h in Headers */ = {isa = PBXBuildFile; fileRef = 475361E020D0BD3C0088F87E /* Feature1GlobalData.h */; };
 		475361E320D0BD3C0088F87E /* Feature1GlobalData.m in Sources */ = {isa = PBXBuildFile; fileRef = 475361E120D0BD3C0088F87E /* Feature1GlobalData.m */; };
 		47BCFDC220C0DFD300217B27 /* TestView.h in Headers */ = {isa = PBXBuildFile; fileRef = 47BCFDC020C0DFD300217B27 /* TestView.h */; };
@@ -55,6 +59,10 @@
 		2F7416062A90FA255A6FEB9F /* Pods-Feature1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Feature1.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Feature1/Pods-Feature1.debug.xcconfig"; sourceTree = "<group>"; };
 		3F6850729325D067AA06777F /* Pods-Feature1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Feature1.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Feature1/Pods-Feature1.release.xcconfig"; sourceTree = "<group>"; };
 		470E9BB16A336532A4B107AD /* libPods-Feature1Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Feature1Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		474A783920DA64E3007B2BDD /* snftransfer_refresh_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snftransfer_refresh_arrow@2x.png"; sourceTree = "<group>"; };
+		474A794620DCD23C007B2BDD /* NIBNViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NIBNViewController.h; sourceTree = "<group>"; };
+		474A794720DCD23C007B2BDD /* NIBNViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NIBNViewController.m; sourceTree = "<group>"; };
+		474A794820DCD23C007B2BDD /* NIBNViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NIBNViewController.xib; sourceTree = "<group>"; };
 		475361E020D0BD3C0088F87E /* Feature1GlobalData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Feature1GlobalData.h; sourceTree = "<group>"; };
 		475361E120D0BD3C0088F87E /* Feature1GlobalData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Feature1GlobalData.m; sourceTree = "<group>"; };
 		47BCFDBC20C0DF7D00217B27 /* test.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpeg; sourceTree = "<group>"; };
@@ -113,6 +121,9 @@
 				47BCFDC020C0DFD300217B27 /* TestView.h */,
 				47BCFDC120C0DFD300217B27 /* TestView.m */,
 				47BCFDBE20C0DFB300217B27 /* TestView.xib */,
+				474A794620DCD23C007B2BDD /* NIBNViewController.h */,
+				474A794720DCD23C007B2BDD /* NIBNViewController.m */,
+				474A794820DCD23C007B2BDD /* NIBNViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -177,6 +188,7 @@
 		47C6491F20BEAAC800447267 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				474A783920DA64E3007B2BDD /* snftransfer_refresh_arrow@2x.png */,
 				47BCFDBC20C0DF7D00217B27 /* test.jpeg */,
 			);
 			path = Resources;
@@ -207,6 +219,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				474A794920DCD23C007B2BDD /* NIBNViewController.h in Headers */,
 				47C6490320BE79C700447267 /* Feature1ObjectionModule.h in Headers */,
 				475361E220D0BD3C0088F87E /* Feature1GlobalData.h in Headers */,
 				47C6488720BE461600447267 /* Feature1.h in Headers */,
@@ -324,7 +337,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				47BCFDDE20C0E94300217B27 /* TestView.xib in Resources */,
+				474A794C20DCD246007B2BDD /* NIBNViewController.xib in Resources */,
 				47BCFDDD20C0E90F00217B27 /* test.jpeg in Resources */,
+				474A783A20DA64E4007B2BDD /* snftransfer_refresh_arrow@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +421,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				47C6492E20BEC50400447267 /* Feature1Interface.m in Sources */,
+				474A794A20DCD23C007B2BDD /* NIBNViewController.m in Sources */,
 				475361E320D0BD3C0088F87E /* Feature1GlobalData.m in Sources */,
 				47BCFDC620C0E1B300217B27 /* CustomView.m in Sources */,
 				47BCFDC320C0DFD300217B27 /* TestView.m in Sources */,

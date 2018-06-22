@@ -9,7 +9,7 @@
 #import "Feature1Interface.h"
 #import <UIKit/UIKit.h>
 #import "TestView.h"
-
+#import "NIBNViewController.h"
 @implementation Feature1Interface
 - (void)presentFeature1SDKWithSourceVC:(UIViewController *) sourceVC
                          animationType:(ModuleAnimationType)animationType
@@ -27,7 +27,14 @@
     
     [sourceVC.view addSubview:testView];
     
+    NSURL *bundleURL = [[NSBundle mainBundle] URLForResource:@"Feature1SDKBundle" withExtension:@"bundle"];
     
+    UIViewController *customVC = [[[NSBundle bundleWithURL:bundleURL] loadNibNamed:@"NIBNViewController" owner:[NIBNViewController class] options:nil] firstObject];
+    customVC.view.backgroundColor = [UIColor redColor];
+    
+    [sourceVC addChildViewController:customVC];
+    [sourceVC.view addSubview:customVC.view];
+    [customVC didMoveToParentViewController:sourceVC];
     NSLog(@"你刚才调用了Feature1的组件");
 }
 @end

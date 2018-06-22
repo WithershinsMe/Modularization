@@ -26,7 +26,7 @@ end
 
 ### pod podspecName("HttpClientSDK"), :git => $SpecPath + 'HttpClient_iOS', :tag => '1.1.0'
 pod podspecName("Common"), :path => '../Modularization/Common_iOS'
-pod podspecName("Feature1"), :path => '../Modularization/Feature1_iOS'
+#pod podspecName("Feature1"), :path => '../Modularization/Feature1_iOS'
 
 target 'Modularization' do
 
@@ -47,9 +47,9 @@ target 'Modularization' do
 end
 
 ## feature1
-#target 'Feature1' do
-#project 'Feature1_iOS/Feature1'
-#end
+target 'Feature1' do
+project 'Feature1_iOS/Feature1'
+end
 
 ## Common
 #target 'Common' do

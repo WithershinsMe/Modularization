@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		47BCFDB720C0D96000217B27 /* Feature1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47BCFDB620C0D96000217B27 /* Feature1.framework */; };
+		474A794E20DCD993007B2BDD /* Feature1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 474A794D20DCD993007B2BDD /* Feature1.framework */; };
+		474A795020DCD99D007B2BDD /* Feature1SDKBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 474A794F20DCD99D007B2BDD /* Feature1SDKBundle.bundle */; };
 		47BCFDB920C0DADB00217B27 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 47BCFDB820C0DADB00217B27 /* README.md */; };
 		47BCFDBB20C0DB4B00217B27 /* createFramework.png in Resources */ = {isa = PBXBuildFile; fileRef = 47BCFDBA20C0DB4B00217B27 /* createFramework.png */; };
 		47C6483C20BE3DFF00447267 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 47C6483B20BE3DFF00447267 /* AppDelegate.m */; };
@@ -45,10 +46,10 @@
 		1901685F6276517BAD0E03F8 /* Pods-Modularization.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Modularization.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Modularization/Pods-Modularization.debug.xcconfig"; sourceTree = "<group>"; };
 		19E75A09FA965BC8FA2285DE /* Pods-ModularizationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModularizationUITests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-ModularizationUITests/Pods-ModularizationUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2079968C42C6A92A3675ED88 /* libPods-ModularizationTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ModularizationTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		47BCFDB620C0D96000217B27 /* Feature1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Feature1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		474A794D20DCD993007B2BDD /* Feature1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Feature1.framework; path = "../Feature1_iOS/Release-universal/Feature1.framework"; sourceTree = "<group>"; };
+		474A794F20DCD99D007B2BDD /* Feature1SDKBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Feature1SDKBundle.bundle; path = "../Feature1_iOS/Release-universal/Feature1SDKBundle.bundle"; sourceTree = "<group>"; };
 		47BCFDB820C0DADB00217B27 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		47BCFDBA20C0DB4B00217B27 /* createFramework.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = createFramework.png; sourceTree = "<group>"; };
-		47BCFDE020C0EBFD00217B27 /* Feature1SDKBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = Feature1SDKBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		47C6483720BE3DFF00447267 /* Modularization.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Modularization.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47C6483A20BE3DFF00447267 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		47C6483B20BE3DFF00447267 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -79,7 +80,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CBD37F2F339C01A747B1BC0 /* libPods-Modularization.a in Frameworks */,
-				47BCFDB720C0D96000217B27 /* Feature1.framework in Frameworks */,
+				474A794E20DCD993007B2BDD /* Feature1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +106,7 @@
 		47C6482E20BE3DFF00447267 = {
 			isa = PBXGroup;
 			children = (
+				474A794F20DCD99D007B2BDD /* Feature1SDKBundle.bundle */,
 				47BCFDB820C0DADB00217B27 /* README.md */,
 				47BCFDBA20C0DB4B00217B27 /* createFramework.png */,
 				47C6483920BE3DFF00447267 /* Modularization */,
@@ -177,9 +179,8 @@
 		F91F77C7D2CAFF470793F569 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				474A794D20DCD993007B2BDD /* Feature1.framework */,
 				0AADE9A351A2603A1B5498C0 /* libPods-Modularization.a */,
-				47BCFDB620C0D96000217B27 /* Feature1.framework */,
-				47BCFDE020C0EBFD00217B27 /* Feature1SDKBundle.bundle */,
 				2079968C42C6A92A3675ED88 /* libPods-ModularizationTests.a */,
 				5AEAD55CDFF6C47D2424F4D1 /* libPods-ModularizationUITests.a */,
 			);
@@ -299,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				47C6484720BE3E0000447267 /* LaunchScreen.storyboard in Resources */,
+				474A795020DCD99D007B2BDD /* Feature1SDKBundle.bundle in Resources */,
 				47C6484420BE3E0000447267 /* Assets.xcassets in Resources */,
 				47BCFDB920C0DADB00217B27 /* README.md in Resources */,
 				47C6484220BE3DFF00447267 /* Main.storyboard in Resources */,
@@ -657,7 +659,10 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Modularization/Modularization-PrefixHeader.pch";
 				INFOPLIST_FILE = Modularization/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = dd.Modularization;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -674,7 +679,10 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Modularization/Modularization-PrefixHeader.pch";
 				INFOPLIST_FILE = Modularization/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = dd.Modularization;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -689,7 +697,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 65LXM77DMH;
 				INFOPLIST_FILE = ModularizationTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = dd.ModularizationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -705,7 +717,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 65LXM77DMH;
 				INFOPLIST_FILE = ModularizationTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = dd.ModularizationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -720,7 +736,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 65LXM77DMH;
 				INFOPLIST_FILE = ModularizationUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = dd.ModularizationUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -735,7 +755,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 65LXM77DMH;
 				INFOPLIST_FILE = ModularizationUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = dd.ModularizationUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
