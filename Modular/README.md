@@ -27,4 +27,12 @@
 #### 设置静态变量共享在FrameWork内部的全局字符串，静态变量的使用范围在定义她的源文件内有效
 
 
+## GIT Config 多配置
+###   git clone git@Wither:WithershinsMe/UIDemoLib.git
 
+Host Wither 
+   HostName github.com
+   User git
+   IdentityFile ~/.ssh/wither
+
+###
