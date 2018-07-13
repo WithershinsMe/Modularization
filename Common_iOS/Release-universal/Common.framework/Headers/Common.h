@@ -14,8 +14,12 @@ FOUNDATION_EXPORT double CommonVersionNumber;
 #import  <Common/CommonDeviceConstant.h>
 #import  <Common/Feature1SDKProtocol.h>
 #import  <Common/ModuleObjectMethod.h>
+#import  <Common/FFMethodDef.h>
 //! Project version string for Common.
 FOUNDATION_EXPORT const unsigned char CommonVersionString[];
+
+
+
 
 // In this header, you should import all the public headers of your framework using statements like #import <Common/PublicHeader.h>
 

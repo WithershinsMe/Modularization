@@ -18,8 +18,6 @@
     
     Feature1GlobalData *data = [Feature1GlobalData shared];
     data.env = env;
-    
-    NSLog(@"current is %@",[Feature1GlobalData myFirstURL]);
     // present view controller
     
     TestView *testView = [[TestView alloc] initWithFrame:CGRectMake(0, 0, 300, 200)];

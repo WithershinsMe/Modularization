@@ -21,6 +21,12 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		47089DFE20D37B2200EB0672 /* NSString+RandomString.h in Headers */ = {isa = PBXBuildFile; fileRef = 47089DFC20D37B2200EB0672 /* NSString+RandomString.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47089DFF20D37B2200EB0672 /* NSString+RandomString.m in Sources */ = {isa = PBXBuildFile; fileRef = 47089DFD20D37B2200EB0672 /* NSString+RandomString.m */; };
+		47089E0120D3946400EB0672 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 47089E0020D3946400EB0672 /* README.md */; };
+		473BB69020F8915000C6DAA2 /* FFMethodDef.h in Headers */ = {isa = PBXBuildFile; fileRef = 473BB68F20F8915000C6DAA2 /* FFMethodDef.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		475361ED20D122DE0088F87E /* ValueValuate.h in Headers */ = {isa = PBXBuildFile; fileRef = 475361EB20D122DE0088F87E /* ValueValuate.h */; };
+		475361EE20D122DE0088F87E /* ValueValuate.m in Sources */ = {isa = PBXBuildFile; fileRef = 475361EC20D122DE0088F87E /* ValueValuate.m */; };
 		47BCFDB320BF99DE00217B27 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 47C648E620BE46C900447267 /* Info.plist */; };
 		47C648EC20BE46C900447267 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47C648E220BE46C800447267 /* Common.framework */; };
 		47C648F120BE46C900447267 /* CommonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47C648F020BE46C900447267 /* CommonTests.m */; };
@@ -46,6 +52,12 @@
 
 /* Begin PBXFileReference section */
 		3DE0C56E1E40D54FA7113B46 /* Pods-Common.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Common.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Common/Pods-Common.debug.xcconfig"; sourceTree = "<group>"; };
+		47089DFC20D37B2200EB0672 /* NSString+RandomString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+RandomString.h"; sourceTree = "<group>"; };
+		47089DFD20D37B2200EB0672 /* NSString+RandomString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+RandomString.m"; sourceTree = "<group>"; };
+		47089E0020D3946400EB0672 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		473BB68F20F8915000C6DAA2 /* FFMethodDef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFMethodDef.h; sourceTree = "<group>"; };
+		475361EB20D122DE0088F87E /* ValueValuate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ValueValuate.h; sourceTree = "<group>"; };
+		475361EC20D122DE0088F87E /* ValueValuate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ValueValuate.m; sourceTree = "<group>"; };
 		47C648E220BE46C800447267 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		47C648E520BE46C900447267 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		47C648E620BE46C900447267 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,6 +111,7 @@
 		47C648D820BE46C800447267 = {
 			isa = PBXGroup;
 			children = (
+				47089E0020D3946400EB0672 /* README.md */,
 				47C648E420BE46C800447267 /* Common */,
 				47C648EF20BE46C900447267 /* CommonTests */,
 				47C648E320BE46C800447267 /* Products */,
@@ -123,7 +136,12 @@
 				47C6491220BEA3A600447267 /* Feature1SDKProtocol.h */,
 				47C648E520BE46C900447267 /* Common.h */,
 				47C6490920BE850700447267 /* CommonType.h */,
+				473BB68F20F8915000C6DAA2 /* FFMethodDef.h */,
 				47C6490B20BE85FB00447267 /* CommonDeviceConstant.h */,
+				475361EB20D122DE0088F87E /* ValueValuate.h */,
+				475361EC20D122DE0088F87E /* ValueValuate.m */,
+				47089DFC20D37B2200EB0672 /* NSString+RandomString.h */,
+				47089DFD20D37B2200EB0672 /* NSString+RandomString.m */,
 				47C648E620BE46C900447267 /* Info.plist */,
 				47C6492F20BED07C00447267 /* ModuleObjectMethod.h */,
 			);
@@ -157,7 +175,10 @@
 			files = (
 				47C648F320BE46C900447267 /* Common.h in Headers */,
 				47C6490A20BE850700447267 /* CommonType.h in Headers */,
+				475361ED20D122DE0088F87E /* ValueValuate.h in Headers */,
 				47C6493020BED07C00447267 /* ModuleObjectMethod.h in Headers */,
+				473BB69020F8915000C6DAA2 /* FFMethodDef.h in Headers */,
+				47089DFE20D37B2200EB0672 /* NSString+RandomString.h in Headers */,
 				47C6491320BEA3A600447267 /* Feature1SDKProtocol.h in Headers */,
 				47C6490C20BE85FB00447267 /* CommonDeviceConstant.h in Headers */,
 				47C6490820BE82EA00447267 /* Common-PrefixHeader.pch in Headers */,
@@ -252,6 +273,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47089E0120D3946400EB0672 /* README.md in Resources */,
 				47BCFDB320BF99DE00217B27 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,6 +389,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				475361EE20D122DE0088F87E /* ValueValuate.m in Sources */,
+				47089DFF20D37B2200EB0672 /* NSString+RandomString.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,6 +542,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Common/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -544,6 +569,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Common/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

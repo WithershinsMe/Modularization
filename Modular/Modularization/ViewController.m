@@ -18,8 +18,8 @@
     // Do any additional setup after loading the view, typically from a nib.
 
     
-
-   
+    NSLog(@"viewdidh");
+    
 }
 
 - (void)viewDidAppear:(BOOL)animated {

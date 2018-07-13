@@ -22,6 +22,6 @@ typedef NS_ENUM (NSInteger, Environment) {
     Pre,
     Sit
 };
-typedef void (^SNFCLCallback)(ModuleStatus status,NSString *errorCode,NSString *errorMsg);
+typedef void (^FFCallback)(ModuleStatus status,NSString *errorCode,NSString *errorMsg);
 
 #endif /* CommonType_h */
